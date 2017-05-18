@@ -7,7 +7,9 @@ class LoginForm extends Component {
   state = { email: '', password: '', error: '' };
 
   onButtonPress() {
-    const { email, password,  } = this.state;
+    const { email, password } = this.state;
+
+    this.setState({ error: ''});
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .catch(() => {
@@ -46,7 +48,7 @@ class LoginForm extends Component {
         </Text>
 
         <CardSection>
-          <Button onPressed={this.onButtonPress.bind(this)}>
+          <Button onPress={this.onButtonPress.bind(this)}>
             Log in
           </Button>
         </CardSection>
