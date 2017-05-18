@@ -3,12 +3,12 @@ import { View, Text } from 'react-native';
 
 class App extends Component {
   render() {
-  return (
-  <View>
-    <Text>An App!!!</Text>
-    </View>
-  );
+    return (
+      <View>
+        <Text>An App!!!</Text>
+      </View>
+    );
   }
 };
 
-empoxt default App;
+export default App;
