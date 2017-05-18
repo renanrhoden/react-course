@@ -30,8 +30,11 @@ state = { loggedIn: null };
     switch (this.state.loggedIn) {
       case true:
         return (
-          <Button>
-            Log out
+          <Button
+          onPress={() => firebase.auth().signOut()}
+          children="Log out"
+          >
+
           </Button>
         );
         break;

@@ -33,7 +33,7 @@ class LoginForm extends Component {
       email: '',
       password: '',
       error: ''
-    })
+    });
   }
 
   renderButton() {
