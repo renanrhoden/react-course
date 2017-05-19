@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import { CardSection } from './common';
 
 class ListItem extends Component {
@@ -7,11 +7,11 @@ class ListItem extends Component {
     const { titleStyle } = styles;
 
     return (
-      <CardSection>
-        <Text>
-          {this.props.library.title}
-        </Text>
-      </CardSection>
+        <CardSection>
+          <Text style={titleStyle}>
+            {this.props.library.title}
+          </Text>
+        </CardSection>
     );
   }
 }
