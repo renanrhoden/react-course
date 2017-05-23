@@ -21,7 +21,7 @@ componentWillMount() {
 }
 
   render() {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk);
+    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
 
     return (
