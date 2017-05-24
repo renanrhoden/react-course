@@ -2,7 +2,7 @@ import {
   EMPLOYEE_UPDATE
 } from '../actions/types';
 
-const INITICIAL_STATE = {
+const INITIAL_STATE = {
   name: '',
   phone: '',
   shift: ''
